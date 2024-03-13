@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [JUICER website](https://imitation-juicer.github.io).
 
-If you find JUICER useful for your work please cite:
+If you find our work useful for your work please cite:
 
 ```
 @article{ankile2024juicer,
