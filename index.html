@@ -151,64 +151,6 @@
 
 
 
-  <!-- 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 
   <section class="hero teaser">
     <div class="container is-max-desktop">
@@ -279,7 +221,7 @@
           <div class="content has-text-justified">
             <p>
               JUICER is a pipeline for improving imitation learning performance with a small human demonstration budget,
-              consisting of 5 main steps:
+              consisting of 5 main steps illustrated in this figure:
             </p>
           </div>
           <div class="content has-text-centered is-full-width">
@@ -287,11 +229,13 @@
               style="width: 100%;">
           </div>
 
-          <p>Overview of the proposed approach. (1) Collect a small number of demonstrations for the task (and related
+          <p>
+            Overview of the proposed approach. (1) Collect a small number of demonstrations for the task (and related
             tasks, if available). (2) Using annotations of bottleneck states, augment the demonstration trajectories to
             create synthetic corrective actions and increase coverage around the bottleneck states. (3) Use this dataset
             to train models with different hyperparameters. (4) Store all rollouts throughout model evaluations. (5) Add
-            any successful rollout to the training set and train the best architecture on all data amassed.</p>
+            any successful rollout to the training set and train the best architecture on all data amassed.
+          </p>
 
           <!-- Add some vertical space -->
           <br>
@@ -310,9 +254,11 @@
               alt="A schematic representation of the trajectory augmentation tool" style="width: 80%;">
           </div>
 
-          <p>An example of extracting "bottleneck" states and using trajectory augmentation tool to create an arbitrary
+          <p>
+            An example of extracting "bottleneck" states and using trajectory augmentation tool to create an arbitrary
             amount of counterfactual trajectories near the bottleneck, effectively increasing the data support and
-            teaching corrective actions.</p>
+            teaching corrective actions.
+          </p>
 
         </div>
       </div>
@@ -342,8 +288,10 @@
             <img src="./static/images/success_rates.svg" alt="The main results presented as a grouped barchart"
               style="width: 100%;">
           </div>
-          <p>Average and maximum success rates (%) of methods across tasks. Bolded methods are components of our JUICER
-            pipeline.</p>
+          <p>
+            Average and maximum success rates (%) of methods across tasks. Bolded methods are components of our JUICER
+            pipeline.
+          </p>
 
           <!-- Add some vertical space -->
           <br>
@@ -352,7 +300,7 @@
 
           <div class="content has-text-justified">
             <p>
-              We show that JUICER can start from only 10 human demonstrations and outperform models trained on 50
+              Furthermore, we show that JUICER can start from only 10 human demonstrations and outperform models trained on 50
               demonstrations without JUICER.
             </p>
           </div>
@@ -376,16 +324,15 @@
       <h2 class="title is-3">Example Rollouts</h2>
       <div class="columns is-centered">
         <div class="column is-full-width">
-          
+
           <h3 class="title is-4">One Leg</h3>
-          
+
           <div class="content has-text-centered is-full-width">
             <video id="teaser" autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/IROS_short.mp4"
-              type="video/mp4">
+              <source src="./static/videos/IROS_short.mp4" type="video/mp4">
             </video>
           </div>
-        </div>  
+        </div>
         <div class="column is-full-width">
           <h3 class="title is-4">Lamp</h3>
 
@@ -399,16 +346,15 @@
       </div>
       <div class="columns is-centered">
         <div class="column is-full-width">
-          
+
           <h3 class="title is-4">Round Table</h3>
-          
+
           <div class="content has-text-centered is-full-width">
             <video id="teaser" autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/IROS_short.mp4"
-              type="video/mp4">
+              <source src="./static/videos/IROS_short.mp4" type="video/mp4">
             </video>
           </div>
-        </div>  
+        </div>
         <div class="column is-full-width">
           <h3 class="title is-4">Square Table</h3>
 
@@ -437,11 +383,10 @@
           <h4 class="title is-5">Failure Mode 1</h4>
           <div class="content has-text-centered is-full-width">
             <video id="teaser" autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/IROS_short.mp4"
-              type="video/mp4">
+              <source src="./static/videos/IROS_short.mp4" type="video/mp4">
             </video>
           </div>
-        </div>  
+        </div>
         <div class="column is-full-width">
           <h4 class="title is-5">Failure Mode 2</h4>
 
@@ -485,12 +430,15 @@
               generating sequences for general-shaped assemblies, accounting for gravity to design a sequence where each
               sub-assembly is physically stable.
             </p>
-            <!-- <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p> -->
+            <p>
+              <a href="#">InsertionNet</a> 1.0 and 2.0 presents a system for performing similar "backward" augmentation around bottleneck states in the real world.
+            </p>
+            <p>
+              <a href="#">Cherry-picking paper</a> presents a way to learn corrective behavior through injecting noise into the system and using appropriate ways to represent actions and states. 
+            </p>
+            <p>
+              <a href="#"></a> also mention the existence of some theoretical work concerning noise injection, corrective behavior, and diffusion models.
+            </p>
           </div>
         </div>
       </div>
@@ -504,12 +452,16 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{ankile2024juicer,
-  author    = {Ankile, Lars and Simeonov, Anthony and Shenfeld, Idan and Agrawal, Pulkit},
-  title     = {JUICER: Data-Efficient Imitation Learning for Robotic Assembly},
-  journal   = {arXiv},
-  year      = {2024},
-}</code></pre>
+      <pre>
+          <code>
+          @article{ankile2024juicer,
+            author    = {Ankile, Lars and Simeonov, Anthony and Shenfeld, Idan and Agrawal, Pulkit},
+            title     = {JUICER: Data-Efficient Imitation Learning for Robotic Assembly},
+            journal   = {arXiv},
+            year      = {2024},
+          }
+        </code>
+      </pre>
     </div>
   </section>
 
