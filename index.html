@@ -98,7 +98,8 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="./static/pdf/Appendix_Learning_Robust_policies_for_Long_Horizon_Robotic_Assembly_Tasks.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <a href="./static/pdf/Appendix_Learning_Robust_policies_for_Long_Horizon_Robotic_Assembly_Tasks.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -240,6 +241,25 @@
           <!-- Add some vertical space -->
           <br>
 
+          <h3 class="title is-4">Policy Observation Space</h3>
+
+          <div class="content has-text-justified">
+            <p>
+              All policies are provided with a 224x224 egocentric RGB image from the wrist (left video below) and a
+              224x224 RGB image from the front view (right video below) as input. The policy is also provided with the
+              proprioceptive state of the robot, including the end-effector pose and velocity, and the gripper state. No
+              explicit object pose is provided to the policy, neither from the AprilTag nor from the simulator, and
+              AprilTags are present as a part of the benchmark environment.
+            </p>
+          </div>
+          <div class="content has-text-centered is-full-width">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/round_table/rollout_round_table_wrist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Add some vertical space -->
+          <br>
 
           <h3 class="title is-4">Trajectory Augmentation System</h3>
 
@@ -300,7 +320,8 @@
 
           <div class="content has-text-justified">
             <p>
-              Furthermore, we show that JUICER can start from only 10 human demonstrations and outperform models trained on 50
+              Furthermore, we show that JUICER can start from only 10 human demonstrations and outperform models trained
+              on 50
               demonstrations without JUICER.
             </p>
           </div>
@@ -340,13 +361,13 @@
         </div>
       </div>
       <!-- End Round Table -->
-      
+
       <!-- Start Lamp -->
       <h3 class="title is-4">Lamp</h3>
       <div class="columns is-centered">
         <div class="column is-full-width">
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/lamp/rollout_lamp_success_0.mp4" type="video/mp4">
             </video>
           </div>
@@ -360,28 +381,30 @@
         </div>
       </div>
       <!-- End Lamp -->
-      
+
       <!-- Start Square Table -->
       <h3 class="title is-4">Square Table</h3>
       <div class="columns is-centered">
         <div class="column is-full-width">
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/square_table/rollout_square_table_success_0.mp4" type="video/mp4">
             </video>
           </div>
         </div>
         <div class="column is-full-width">
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/square_table/rollout_square_table_success_1.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
-      <p>An interesting behavior to notice in these square table rollout is that the robot is adjusting the tabletop up against the guard after screwing in the first leg and thus ensures it stays more in-distribution in the second. It does not do this in the first rollout as the tabletop is already sufficiently aligned with the guard.</p>
+      <p>An interesting behavior to notice in these square table rollout is that the robot is adjusting the tabletop up
+        against the guard after screwing in the first leg and thus ensures it stays more in-distribution in the second.
+        It does not do this in the first rollout as the tabletop is already sufficiently aligned with the guard.</p>
       <!-- End Square Table -->
-      
+
     </div>
   </section>
 
@@ -396,7 +419,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Fail insert leg in tabletop</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/round_table/rollout_round_table_failure_1.mp4" type="video/mp4">
             </video>
           </div>
@@ -405,7 +428,7 @@
           <h4 class="title is-5">Fail insert base in leg</h4>
 
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/round_table/rollout_round_table_failure_0.mp4" type="video/mp4">
             </video>
           </div>
@@ -419,7 +442,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Miss hole when inserting bulb</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/lamp/rollout_lamp_failure_0.mp4" type="video/mp4">
             </video>
           </div>
@@ -427,7 +450,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Partially screwing in bulb</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/lamp/rollout_lamp_failure_1.mp4" type="video/mp4">
             </video>
           </div>
@@ -437,7 +460,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Bulb rolling into unseen location</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/lamp/rollout_lamp_failure_2.mp4" type="video/mp4">
             </video>
           </div>
@@ -445,13 +468,13 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Misgrasping base causing distribution shift</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/lamp/rollout_lamp_failure_3.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
-      <!-- End Lamp -->      
+      <!-- End Lamp -->
 
       <!-- Start Square Table -->
       <h3 class="title is-4">Square Table</h3>
@@ -459,7 +482,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Not properly inserting the 3rd leg</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/square_table/rollout_square_table_failure_0.mp4" type="video/mp4">
             </video>
           </div>
@@ -467,7 +490,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Missing the insertion of the 1st leg</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/square_table/rollout_square_table_failure_1.mp4" type="video/mp4">
             </video>
           </div>
@@ -478,7 +501,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Incomplete screwing of leg 1 and misplace leg 2</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/square_table/rollout_square_table_failure_2.mp4" type="video/mp4">
             </video>
           </div>
@@ -486,7 +509,7 @@
         <div class="column is-full-width">
           <h4 class="title is-5">Misgrasping the 2nd leg</h4>
           <div class="content has-text-centered is-full-width">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
+            <video autoplay muted loop playsinline height="100%">
               <source src="./static/videos/square_table/rollout_square_table_failure_3.mp4" type="video/mp4">
             </video>
           </div>
@@ -497,6 +520,25 @@
     </div>
   </section>
 
+  <section>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Zero-Shot Rollout w/o AprilTag</h2>
+
+      <!-- Start One Leg no Tag -->
+      <h3 class="title is-4">First leg of the Square Table task</h3>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-centered is-full-width">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/one_leg/rollout_one_leg_success_notag.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!-- End One Leg no Tag -->
+
+    </div>
+  </section>
 
 
 
@@ -524,12 +566,29 @@
               generating sequences for general-shaped assemblies, accounting for gravity to design a sequence where each
               sub-assembly is physically stable.
             </p>
-            <p><a href="https://ieeexplore.ieee.org/abstract/document/9645269">InsertionNet 1.0</a> and <a href="https://ieeexplore.ieee.org/abstract/document/10016821">2.0</a> address the problem of insertion specifically and propose regression-based methods that combine visual and force inputs to solve various insertion tasks efficiently and robustly. InsertionNet 2.0 improves upon the original by introducing multimodal input, contrastive learning, and a one-shot learning technique using a relation network scheme, achieving near-perfect performance on 16 real-life insertion tasks while minimizing execution time and contact during insertion.</p>
+            <p><a href="https://ieeexplore.ieee.org/abstract/document/9645269">InsertionNet 1.0</a> and <a
+                href="https://ieeexplore.ieee.org/abstract/document/10016821">2.0</a> address the problem of insertion
+              specifically and propose regression-based methods that combine visual and force inputs to solve various
+              insertion tasks efficiently and robustly. InsertionNet 2.0 improves upon the original by introducing
+              multimodal input, contrastive learning, and a one-shot learning technique using a relation network scheme,
+              achieving near-perfect performance on 16 real-life insertion tasks while minimizing execution time and
+              contact during insertion.</p>
             <p>
-              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9561662">Grasping with Chopsticks</a> develops an autonomous chopsticks-equipped robotic manipulator for picking up small objects using mainly two approaches to reduce covariate shift and improve generalization: applying an invariant operator to increase data support at critical grasping steps and generating synthetic corrective labels to prevent error accumulation.
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9561662">Grasping with Chopsticks</a>
+              develops an autonomous chopsticks-equipped robotic manipulator for picking up small objects using mainly
+              two approaches to reduce covariate shift and improve generalization: applying an invariant operator to
+              increase data support at critical grasping steps and generating synthetic corrective labels to prevent
+              error accumulation.
             </p>
             <p>
-              There's been an increasing amount of theoretical analysis of imitation learning, with recent works focusing on the properties of noise injection and corrective actions. <a href="https://arxiv.org/abs/2307.14619">Provable Guarantees for Generative Behavior Cloning</a> proposes a framework for generative behavior cloning, ensuring continuity through data augmentation and noise injection. <a href="https://arxiv.org/abs/2310.12972">CCIL</a> generates corrective data using local continuity in environment dynamics, while <a href="https://arxiv.org/abs/2205.14812">TaSIL</a> penalizes deviations in higher-order Taylor series terms between learned and expert policies. These works aim to enhance the robustness and sample efficiency of imitation learning algorithms.
+              There's been an increasing amount of theoretical analysis of imitation learning, with recent works
+              focusing on the properties of noise injection and corrective actions. <a
+                href="https://arxiv.org/abs/2307.14619">Provable Guarantees for Generative Behavior Cloning</a> proposes
+              a framework for generative behavior cloning, ensuring continuity through data augmentation and noise
+              injection. <a href="https://arxiv.org/abs/2310.12972">CCIL</a> generates corrective data using local
+              continuity in environment dynamics, while <a href="https://arxiv.org/abs/2205.14812">TaSIL</a> penalizes
+              deviations in higher-order Taylor series terms between learned and expert policies. These works aim to
+              enhance the robustness and sample efficiency of imitation learning algorithms.
             </p>
           </div>
         </div>
