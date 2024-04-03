@@ -213,6 +213,79 @@
   <section class="section">
     <div class="container is-max-desktop">
 
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">TL;DR</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              JUICER is a pipeline for learning image-based policies for complex multi-step long-horizon assembly tasks
+              from a small number of demonstrations by combining expressive policy architectures and various techniques
+              for dataset expansion.
+            </p>
+          </div>
+
+          <div class="content has-text-centered is-full-width">
+            <video autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/round_table/rollout_round_table_wrist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+              Policies get egocentric RGB image from the wrist (left video above) and a
+              RGB image from the front view (right video above) as input, as well as the
+              proprioceptive state of the robot end-effector. <b>No explicit object pose is provided to the policy,
+                neither from the AprilTag nor from the simulator.</b> <i>Note: AprilTags are present as a part of the
+                benchmark environment.</i>
+            </p>
+          </div>
+
+          <!-- Add some vertical space -->
+          <!-- <br> -->
+
+          <!-- Add the 3 videos here without AR tags -->
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <div class="content has-text-centered is-full-width">
+                  <video autoplay muted loop playsinline height="100%">
+                    <source src="./static/videos/round_table/rollout_round_table_success_notag.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="column is-full-width">
+                <div class="content has-text-centered is-full-width">
+                  <video autoplay muted loop playsinline height="100%">
+                    <source src="./static/videos/one_leg/rollout_one_leg_success_notag.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="column is-full-width">
+                <div class="content has-text-centered is-full-width">
+                  <video autoplay muted loop playsinline height="100%">
+                    <source src="./static/videos/lamp/rollout_lamp_success_notag.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- End One Leg no Tag -->
+
+            <p>These policies are trained with in the environment with AprilTags included and rolled out zero-shot. The
+              rest of the experiments are done with the unaltered environment.</p>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
 
       <div class="columns is-centered">
         <div class="column is-full-width">
@@ -242,25 +315,6 @@
           <!-- Add some vertical space -->
           <br>
 
-          <h3 class="title is-4">Policy Observation Space</h3>
-
-          <div class="content has-text-justified">
-            <p>
-              All policies are provided with a 224x224 egocentric RGB image from the wrist (left video below) and a
-              224x224 RGB image from the front view (right video below) as input. The policy is also provided with the
-              proprioceptive state of the robot, including the end-effector pose and velocity, and the gripper state. No
-              explicit object pose is provided to the policy, neither from the AprilTag nor from the simulator, and
-              AprilTags are present as a part of the benchmark environment.
-            </p>
-          </div>
-          <div class="content has-text-centered is-full-width">
-            <video autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/round_table/rollout_round_table_wrist.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <!-- Add some vertical space -->
-          <br>
 
           <h3 class="title is-4">Trajectory Augmentation System</h3>
 
@@ -517,26 +571,6 @@
         </div>
       </div>
       <!-- End Square Table -->
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Zero-Shot Rollout w/o AprilTag</h2>
-
-      <!-- Start One Leg no Tag -->
-      <h3 class="title is-4">First leg of the Square Table task</h3>
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <div class="content has-text-centered is-full-width">
-            <video autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/one_leg/rollout_one_leg_success_notag.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <!-- End One Leg no Tag -->
 
     </div>
   </section>
